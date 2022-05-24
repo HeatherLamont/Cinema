@@ -41,19 +41,19 @@ describe('Cinema', function () {
   });
 
   it('should be able to check whether there are some films from a particular year', function(){
-    assert.deepStrictEqual(cinema.filmByYear(2017), true)
+    assert.deepStrictEqual(cinema.filmsByYear(2017), true)
   });
 
   it('should be able to check whether there are no films from a particular year', function(){
-    assert.deepStrictEqual(cinema.filmByYear(2026), false)
+    assert.deepStrictEqual(cinema.filmsByYear(2026), false)
   });
 
   it('should be able to check whether all films are over a particular length', function(){
-    assert.deepStrictEqual(cinema.filmByLength(90), true)
+    assert.deepStrictEqual(cinema.filmsByLength(90), true)
   });
 
   it('should be able to calculate total running time of all films', function(){
-    assert.deepStrictEqual(cinema.totalFilmLength(), 622 )
+    assert.deepStrictEqual(cinema.totalFilmsLength(), 622 )
   });
 
   it('should be able to filter films by year', function(){
